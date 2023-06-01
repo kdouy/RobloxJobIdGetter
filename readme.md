@@ -15,5 +15,3 @@
 1. **Why is anti virus detecting it?**
 - it doesn't detect in my computer by false positive (the application is just the set mouse on the middle to prevent moving out the window of Roblox).
 
-https://github.com/mengdeveloper/rbxjobidgrabber/assets/53615275/43654d9f-e2c6-4437-95ed-ca821363ec39
-
