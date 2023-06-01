@@ -7,6 +7,7 @@
 #include <sys/stat.h>
 #include <time.h>
 #include <Windows.h>
+#include <cstdio>
 
 using namespace std;
 
@@ -44,12 +45,15 @@ string init()
     {
         // Convert String
         string fileName = entry.path().string();
-        time_t fileTime = getFileModifiedTime(fileName.c_str());
-
-        if (difftime(time, fileTime))
+        if (fileName != path + "\\archive")
         {
-            curFile = fileName;
-            time = fileTime;
+            time_t fileTime = getFileModifiedTime(fileName.c_str());
+
+            if (difftime(time, fileTime))
+            {
+                curFile = fileName;
+                time = fileTime;
+            }
         }
     }
 
@@ -121,9 +125,11 @@ int main()
 
         string getJobid = fetch(getText, "Joining game '", "' p");
         string getPlaceId = fetch(getText, "placeId\":", ",\"");
+        string getUDMUX = fetch(getText, "Server Address = ", "2023-");
 
-        printf("[Current-JobId] ==> %s\n", getJobid.c_str());
-        printf("[Current-PlaceId] ==> %s\n", getPlaceId.c_str());
+        printf("[Server-JobId] ==> %s\n", getJobid.c_str());
+        printf("[Server-PlaceId] ==> %s\n", getPlaceId.c_str());
+        // printf("[Server-Network] ==> %s\n", getUDMUX.c_str());
 
         string getFinalizeLink = "Roblox.GameLauncher.joinGameInstance('" + getPlaceId + "', '" + getJobid + "')";
         printf("[Shared-Link]: %s\n\n", getFinalizeLink.c_str());
@@ -134,12 +140,14 @@ int main()
 
             string getJobid = fetch(splitData, "Joining game '", "' p");
             string getPlaceId = fetch(getText, "initiateTeleportToPlace: URL: https://gamejoin.roblox.com/v1/join-game POST Body: {\"placeId\":", ",\"i");
+            string getUDMUX = fetch(splitData, "UDMUX server ", ", and RCC server");
 
             if (getPlaceId != "" && getJobid != "")
             {
                 printf("[Teleported Game (Unsupported)]::\n");
-                printf("[Current-JobId] ==> %s\n", getJobid.c_str());
-                printf("[Current-PlaceId] ==> %s\n", getPlaceId.c_str());
+                printf("[Server-JobId] ==> %s\n", getJobid.c_str());
+                printf("[Server-PlaceId] ==> %s\n", getPlaceId.c_str());
+                // printf("[Server-Network] ==> %s\n", getUDMUX.c_str());
 
                 string getFinalizeLink = "Roblox.GameLauncher.joinGameInstance('" + getPlaceId + "', '" + getJobid + "')";
                 printf("[Shared-Link]: %s", getFinalizeLink.c_str());
