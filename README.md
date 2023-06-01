@@ -2,7 +2,7 @@
 - To join the same server or shared server with someone without friending them.
 
 ## Usage
-1. Download the file by clicking this link: ?
+1. Download the file by clicking this link: https://github.com/mengdeveloper/rbxjobidgrabber/releases/download/Release/JobIdGetter.exe
 2. Open the file `JobIdGetter.exe`.
 3. Copy the shared link.
 4. Open chrome or firefox Console. (F12 or Ctrl-Shift-I)
