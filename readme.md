@@ -1,3 +1,6 @@
+## What is this?
+- To join the same server or shared server with someone without friending them.
+
 ## Usage
 1. Download the file by clicking this link: ?
 2. Open the file `JobIdGetter.exe`.
