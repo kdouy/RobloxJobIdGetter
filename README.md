@@ -8,6 +8,9 @@
 4. Open chrome or firefox Console. (F12 or Ctrl-Shift-I)
 5. Paste the shared link in console and load Roblox.
 
+## Issue
+I haven't fix when you join game by the launcher it only work with Roblox from website.
+
 ## Anti Cheat
 - **This application is completely harmless for `Roblox` because it has no injection or anything to touch into `Roblox` this is just keeping mouse position on the same place.**
 
