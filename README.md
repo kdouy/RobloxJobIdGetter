@@ -12,7 +12,7 @@
 I haven't fix when you join game by the launcher it only work with Roblox from website.
 
 ## Anti Cheat
-- **This application is completely harmless for `Roblox` because it has no injection or anything to touch into `Roblox` this is just keeping mouse position on the same place.**
+- **This application is completely harmless for `Roblox` because it has no injection or anything to touch into `Roblox`**
 
 ## Note
 - Please open everytime you need to grab JobId/Current Server Id
