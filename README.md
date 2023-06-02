@@ -19,7 +19,7 @@ I haven't fix when you join game by the launcher it only work with Roblox from w
 
 ## FAQ
 1. **Why is anti virus detecting it?**
-- it doesn't detect in my computer by false positive (the application is just the set mouse on the middle to prevent moving out the window of Roblox).
+- it doesn't detect in my computer by false positive (the application is just go on roblox file and grab jobid from log).
 
 https://github.com/mengdeveloper/rbxjobidgrabber/assets/53615275/7d3c8dd9-b60a-4553-a689-931d38fc4cad
 
